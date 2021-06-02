@@ -22,11 +22,6 @@ export const Input = styled.input`
   box-sizing: border-box;
 `;
 
-export const Break = styled.div`
-  flex-basis: 100%;
-  height: 0;
-`;
-
 export const Button = styled.button`
   display: flex;
   align-items: center;
@@ -70,4 +65,9 @@ export const Text = styled.p`
     font-size: 16px;
     line-height: 22px;
   }
+`;
+
+export const Break = styled.div`
+  flex-basis: 100%;
+  height: 0;
 `;
