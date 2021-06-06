@@ -12,8 +12,6 @@ export const Background = styled.div`
   }
 `;
 
-export const Frame = styled.div``;
-
 export const Container = styled.div`
   display: flex;
   margin: 0 56px;
@@ -58,3 +56,4 @@ export const ButtonLink = styled(ReactRouterLink)`
     background: #f40612;
   }
 `;
+
