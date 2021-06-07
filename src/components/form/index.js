@@ -1,4 +1,4 @@
-import React from 'react'import { Container } from '../../accordion/styles/accordion';
+import React from 'react' 
 import { 
     Container, 
     Base, 
