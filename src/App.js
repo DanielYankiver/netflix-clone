@@ -4,6 +4,9 @@ import { Home, Browse, SignIn, SignUp } from './pages';
 import * as ROUTES from './constants/routes';
 
 export default function App() {
+
+  require('dotenv').config() 
+
   return (
     <Router>
       <Route path="/browse">
