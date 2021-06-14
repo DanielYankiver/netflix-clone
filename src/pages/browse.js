@@ -9,5 +9,4 @@ export default function Browse() {
     const slides = selectionFilter({ series, films });
 
     return <BrowseContainer slides={slides} />;
-
 }
