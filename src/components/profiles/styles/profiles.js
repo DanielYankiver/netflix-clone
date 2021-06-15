@@ -57,6 +57,7 @@ export const Item = styled.li`
   &:hover ${Name} {
     font-weight: bold;
     color: white;
+    cursor: pointer;
   }
 
   &:last-of-type {
