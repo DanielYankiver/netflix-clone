@@ -10,16 +10,13 @@ export function BrowseContainer({ slides }) {
     const user = firebase.auth().currentUser || {};
 
     useEffect(() => {
-        console.log( 'profile', profile )
         setTimeout(() => {
             setLoading(false)
         }, 3000);
     }, [profile.displayName])
 
     return profile.displayName ? (
-        loading ? (
-            <Loading src={user.photoUrl} /> 
-        ) : null 
+        loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />
     ) : (
         <SelectProfileContainer user={user} setProfile={setProfile} />
     );
