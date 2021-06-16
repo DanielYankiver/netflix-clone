@@ -8,6 +8,7 @@ import {
     Link, 
     Logo,
     Group,
+    Profile,
     Picture, 
     Feature, 
     FeatureCallOut, 
@@ -24,6 +25,10 @@ Header.Feature = function HeaderFeature({children, ...restProps}) {
 
 Header.FeatureCallOut = function HeaderFeatureCallOut ({children, ...restProps}) {
     return <FeatureCallOut  { ...restProps}>{children}</FeatureCallOut>;
+}
+
+Header.Profile = function HeaderProfile({children, ...restProps}) {
+    return <Profile { ...restProps}>{children}</Profile>;
 }
 
 Header.Picture = function HeaderPicture ({ src, ...restProps }) {
