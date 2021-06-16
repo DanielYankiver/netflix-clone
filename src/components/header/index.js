@@ -9,6 +9,7 @@ import {
     Logo,
     Group,
     Profile,
+    Dropdown,
     Picture, 
     Feature, 
     FeatureCallOut, 
@@ -33,6 +34,10 @@ Header.Profile = function HeaderProfile({children, ...restProps}) {
 
 Header.Picture = function HeaderPicture ({ src, ...restProps }) {
     return <Text {...restProps} src={`/images/users?${src}.png`}>{src}</Text>;
+}
+
+Header.Dropdown = function HeaderDropdown({children, ...restProps}) {
+    return <Dropdown { ...restProps}>{children}</Dropdown>;
 }
 
 Header.Text = function HeaderText({children, ...restProps}) {
