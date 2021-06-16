@@ -29,6 +29,17 @@ export const Container = styled.div`
   }
 `;
 
+export const Picture = styled.div`
+  display: flex; 
+  align-items: center; 
+  margin-left: 20px;
+  position: relative;
+
+  button {
+    cursor: pointer;
+  }
+`;
+
 export const Logo = styled.img`
   height: 36px;
   width: 134px;
