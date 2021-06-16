@@ -30,10 +30,10 @@ export function BrowseContainer({ slides }) {
                     </Header.Group>
                     <Header.Group>
                         <Header.Profile>
-                            <Header.Picture src={user.PhotoURL} />
+                            <Header.Picture src={user.photoURL} />
                             <Header.Dropdown>
                                 <Header.Group>
-                                    <Header.Picture src={user.PhotoURL} />
+                                    <Header.Picture src={user.photoURL} />
                                     <Header.TextLink>{user.displayName}</Header.TextLink>
                                 </Header.Group>
                             </Header.Dropdown>

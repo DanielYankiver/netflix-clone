@@ -8,8 +8,7 @@ export const Background = styled.div`
     no-repeat;
 
   @media (max-width: 1100px) {
-    ${({ dontShowOnSmallViewPort }) => 
-    dontShowOnSmallViewPort && `background: none;`}
+    ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
   }
 `;
 
@@ -31,17 +30,17 @@ export const Container = styled.div`
 
 export const Picture = styled.button`
   background: url(${({ src }) => src});
-  background-size: contain; 
+  background-size: contain;
   border: 0;
   width: 32px;
   height: 32px;
   cursor: pointer;
 `;
 
-export const Dropdown =styled.div`
+export const Dropdown = styled.div`
   display: none;
-  background-color: black;
   position: absolute;
+  background-color: black;
   padding: 10px;
   width: 100px;
   top: 32px;
@@ -49,8 +48,8 @@ export const Dropdown =styled.div`
 `;
 
 export const Profile = styled.div`
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   margin-left: 20px;
   position: relative;
 
@@ -118,7 +117,6 @@ export const FeatureCallOut = styled.h2`
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
   margin: 0;
-  margin-bottom: 20px;
 `;
 
 export const Link = styled.p`
@@ -136,6 +134,7 @@ export const Link = styled.p`
     margin-right: 0;
   }
 `;
+
 
 export const Group = styled.div`
   display: flex;
