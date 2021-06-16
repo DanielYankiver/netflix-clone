@@ -24,6 +24,8 @@ export function BrowseContainer({ slides }) {
             <Header src="joker1">
                 <Header.Frame>
                     <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix"/>
+                    <Header.TextLink>Series</Header.TextLink>
+                    <Header.TextLink>Films</Header.TextLink>
                 </Header.Frame>
                 <Header.Feature>
                     <Header.FeatureCallOut>

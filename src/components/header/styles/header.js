@@ -84,3 +84,19 @@ export const FeatureCallOut = styled.h2`
   margin: 0;
   margin-bottom: 20px;
 `;
+
+export const Link = styled.p`
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+`;
