@@ -20,7 +20,6 @@ export function BrowseContainer({ slides }) {
     return profile.displayName ? (
         <>
             {loading ? <Loading src={user.photoURL} />  :  <Loading.ReleaseBody />}
-
             <Header src="joker1" dontShowOnSmallViewPort>
                 <Header.Frame>
                     <Header.Group>
@@ -35,6 +34,9 @@ export function BrowseContainer({ slides }) {
                                 <Header.Group>
                                     <Header.Picture src={user.photoURL} />
                                     <Header.TextLink>{user.displayName}</Header.TextLink>
+                                </Header.Group>
+                                <Header.Group>
+                                    <Header.TextLink>Sign out</Header.TextLink>
                                 </Header.Group>
                             </Header.Dropdown>
                         </Header.Profile>
