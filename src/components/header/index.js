@@ -41,21 +41,22 @@ Header.Picture = function HeaderPicture({ src, ...restProps }) {
 
 Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }) {
     const [searchActive, setSearchActive] = useState(false);
-
+  
     return (
-        <Search {...restProps}>
-            <SearchIcon onClick={() => setSearchActive(searchActive => !searchActive)}>
-                <img src="/images/icons/search.png" alt="Search" /> 
-            </SearchIcon>
-            <SearchInput 
-                value={searchTerm} 
-                onChange={({ target }) => setSearchTerm(target.value)} 
-                placeholder="Search films and series"
-                active={setSearchActive}
-            />
-        </Search>
-    )
-};
+      <Search {...restProps}>
+        <SearchIcon onClick={() => setSearchActive((searchActive) => !searchActive)} data-testid="search-click">
+          <img src="/images/icons/search.png" alt="Search" />
+        </SearchIcon>
+        <SearchInput
+          value={searchTerm}
+          onChange={({ target }) => setSearchTerm(target.value)}
+          placeholder="Search films and series"
+          active={searchActive}
+        />
+      </Search>
+    );
+  };
+  
 
 Header.Dropdown = function HeaderDropdown({children, ...restProps}) {
     return <Dropdown { ...restProps}>{children}</Dropdown>;
