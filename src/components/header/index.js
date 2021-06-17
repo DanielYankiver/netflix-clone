@@ -13,7 +13,10 @@ import {
     Picture, 
     Feature, 
     FeatureCallOut, 
-    Text, 
+    Text,
+    Search,
+    SearchIcon,
+    SearchInput,
 } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
