@@ -10,7 +10,8 @@ import {
     Group,
     Profile,
     Dropdown,
-    Picture, 
+    Picture,
+    PlayButton, 
     Feature, 
     FeatureCallOut, 
     Text,
@@ -68,6 +69,10 @@ Header.Text = function HeaderText({children, ...restProps}) {
 
 Header.TextLink = function HeaderTextLink({children, ...restProps}) {
     return <Link { ...restProps}>{children}</Link>;
+}
+
+Header.PlayButton = function HeaderPlayButton({children, ...restProps}) {
+    return <PlayButton { ...restProps}>{children}</PlayButton>;
 }
 
 Header.Frame = function HeaderFrame({children, ...restProps}) {
